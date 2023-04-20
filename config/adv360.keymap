@@ -33,6 +33,17 @@
     };
   };
 
+      macros {
+          macro_build: macro_build {
+              label = "macro_build_intellij";
+              compatible = "zmk,behavior-macro";
+              #binding-cells = <0>;
+              bindings
+                  = <&macro_press &kp LGUI &mo 2 &kp N8>
+                  ;
+          };
+      };
+
     keymap {
         compatible = "zmk,keymap";
 
