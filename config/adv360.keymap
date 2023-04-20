@@ -41,11 +41,11 @@
               bindings
                   = <&macro_press &mo 2>
                    , <&macro_press &kp LGUI>
-                   , <&macro_press &kp N8>
+                   , <&macro_press &kp F9>
                     , <&macro_pause_for_release>
                     , <&macro_release &mo 2>
                     , <&macro_release &kp LGUI>
-                    , <&macro_release &kp N8>
+                    , <&macro_release &kp F9>
                   ;
           };
       };
