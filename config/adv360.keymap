@@ -19,40 +19,6 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
-   macros {
-          macro_build: macro_build {
-              label = "macro_build_intellij";
-              compatible = "zmk,behavior-macro";
-              #binding-cells = <0>;
-              bindings
-                  = <&macro_press &mo 2 &kp LGUI &kp F9>
-                    , <&macro_pause_for_release>
-                    , <&macro_release &mo 2 &kp LGUI &kp F9>
-                  ;
-          };
-
-            macro_commit: macro_commit {
-                label = "macro_commit_intellij";
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_press &kp LGUI &kp K>
-                      , <&macro_pause_for_release>
-                      , <&macro_release &kp LGUI &kp K>
-                    ;
-            };
-
-                       macro_push: macro_push {
-                           label = "macro_push_intellij";
-                           compatible = "zmk,behavior-macro";
-                           #binding-cells = <0>;
-                           bindings
-                               = <&macro_press &kp LGUI &kp LSHIFT &kp K>
-                                 , <&macro_pause_for_release>
-                                 , <&macro_release &kp LGUI &kp LSHIFT &kp K>
-                               ;
-                       };
-      };
 
   behaviors {
     #include "macros.dtsi"
@@ -67,13 +33,13 @@
         bindings = <&kp>, <&kp>;
     };
 
-            build_process: build_process {
-                compatible = "zmk,behavior-tap-dance";
-                label = "build_process";
-                #binding-cells = <0>;
-                tapping-term-ms = <200>;
-                bindings = <&macro_build >, <&macro_commit>, <&macro_push>;
-            };
+    build_process: build_process {
+        compatible = "zmk,behavior-tap-dance";
+        label = "build_process";
+        #binding-cells = <0>;
+        tapping-term-ms = <200>;
+        bindings = <&macro_build >, <&macro_commit>, <&macro_push>;
+    };
   };
 
 
