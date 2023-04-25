@@ -1,5 +1,5 @@
 macro_launch_sqldeveloper: macro_launch_sqldeveloper {
-label = "macro_launch_sqldeveloper";
+label = "launch sql developer";
 compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LGUI &kp LCTRL &kp LSHIFT &kp S>
@@ -7,7 +7,7 @@ bindings = <&macro_press &kp LGUI &kp LCTRL &kp LSHIFT &kp S>
  ,<&macro_release &kp LGUI &kp LCTRL &kp LSHIFT &kp I>;
 };
 macro_launch_postman: macro_launch_postman {
-label = "macro_launch_postman";
+label = "launch postman";
 compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LGUI &kp LCTRL &kp LSHIFT &kp P>
@@ -15,7 +15,7 @@ bindings = <&macro_press &kp LGUI &kp LCTRL &kp LSHIFT &kp P>
  ,<&macro_release &kp LGUI &kp &kp LCTRL LSHIFT &kp P>;
 };
 macro_launch_intellij: macro_launch_intellij {
-label = "macro_launch_intellij";
+label = "launch intellij";
 compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LGUI &kp LCTRL &kp LSHIFT &kp I>
