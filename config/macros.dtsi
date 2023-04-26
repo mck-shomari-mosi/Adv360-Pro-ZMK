@@ -2,7 +2,7 @@ macro_launch_search: macro_launch_search {
 label = "macro_launch_search";
 compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LGUI $kp LALT &kp O>
+bindings = <&macro_press &kp LGUI &kp LALT &kp O>
  ,<&macro_pause_for_release>
  ,<&macro_release &kp LGUI &kp LALT &kp O>;
 };
