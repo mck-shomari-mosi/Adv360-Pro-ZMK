@@ -42,7 +42,7 @@
     };
 
 
-    app_launcher: ide_shortcuts {
+    ide_shortcuts: ide_shortcuts {
         compatible = "zmk,behavior-tap-dance";
         label = "app_launcher";
         #binding-cells = <0>;
