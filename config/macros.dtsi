@@ -1,26 +1,26 @@
-macro_launch_sqldeveloper: macro_launch_sqldeveloper {
-label = "launch sql developer";
+macro_launch_search: macro_launch_search {
+label = "macro_launch_search";
 compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LGUI &kp LCTRL &kp LALT &kp S>
+bindings = <&macro_press &kp LGUI &kp O>
  ,<&macro_pause_for_release>
- ,<&macro_release &kp LGUI &kp LCTRL &kp LALT &kp S>;
+ ,<&macro_release &kp LGUI &kp O>;
 };
-macro_launch_postman: macro_launch_postman {
-label = "launch postman";
+macro_format_code: macro_format_code {
+label = "macro_format_code";
 compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LGUI &kp LCTRL &kp LALT &kp P>
- ,<&macro_pause_for_release>
- ,<&macro_release &kp LGUI &kp LCTRL &kp LALT &kp P>;
+bindings = <&macro_press &kp LGUI &kp LALT &kp L>
+  ,<&macro_pause_for_release>
+  ,<&macro_release &kp LGUI &kp LALT &kp L>;
 };
-macro_launch_intellij: macro_launch_intellij {
-label = "launch intellij";
+macro_organize_imports: macro_organize_imports {
+label = "macro_organize_imports";
 compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LGUI &kp LCTRL &kp LALT &kp I>
- ,<&macro_pause_for_release>
- ,<&macro_release &kp LGUI &kp LCTRL &kp LALT &kp I>;
+bindings = <&macro_press &kp LGUI &kp LCTRL &kp O>
+    ,<&macro_pause_for_release>
+    ,<&macro_release &kp LGUI &kp LCTRL &kp O>;
 };
 macro_push: macro_push {
 label = "macro_push_intellij";
