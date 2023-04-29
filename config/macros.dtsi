@@ -1,26 +1,26 @@
+macro_debug: macro_debug {
+label = "macro_debug";
+compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+bindings = <&macro_press &kp LCTRL &kp LSHIFT &kp D>
+ ,<&macro_pause_for_release>
+ ,<&macro_release &kp LCTRL &kp LSHIFT &kp D>;
+};
+macro_optimize_imports: macro_optimize_imports {
+label = "macro_optimize_imports";
+compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+bindings = <&macro_press &kp LCTRL &kp LALT &kp O>
+ ,<&macro_pause_for_release>
+ ,<&macro_release &kp LCTRL &kp LALT &kp O>;
+};
 macro_launch_search: macro_launch_search {
 label = "macro_launch_search";
 compatible = "zmk,behavior-macro";
 #binding-cells = <0>;
-bindings = <&macro_press &kp LGUI &kp LALT &kp O>
+bindings = <&macro_press &kp LGUI &kp LSHIFT &kp F>
  ,<&macro_pause_for_release>
- ,<&macro_release &kp LGUI &kp LALT &kp O>;
-};
-macro_format_code: macro_format_code {
-label = "macro_format_code";
-compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
-bindings = <&macro_press &kp LGUI &kp LALT &kp L>
-  ,<&macro_pause_for_release>
-  ,<&macro_release &kp LGUI &kp LALT &kp L>;
-};
-macro_organize_imports: macro_organize_imports {
-label = "macro_organize_imports";
-compatible = "zmk,behavior-macro";
-#binding-cells = <0>;
-bindings = <&macro_press &kp LGUI &kp LCTRL &kp O>
-    ,<&macro_pause_for_release>
-    ,<&macro_release &kp LGUI &kp LCTRL &kp O>;
+ ,<&macro_release &kp LGUI &kp LSHIFT &kp F>;
 };
 macro_push: macro_push {
 label = "macro_push_intellij";
